@@ -1,0 +1,21 @@
+:root {
+  --primary-color: #282828;
+  --secondary-color: #FF00FF;
+  --tertiary-color: #00FFFF;
+}
+
+.glitch {
+    font-size: 2em;
+    color: #fff;
+    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000;
+  }
+
+main {
+  background-color: var(--primary-color);
+}
+
+.carouselImg {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
