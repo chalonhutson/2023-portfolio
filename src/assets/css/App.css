@@ -4,6 +4,18 @@
   --tertiary-color: #00FFFF;
 }
 
+/* Reset all default button styles */
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
 .glitch {
     font-size: 2em;
     color: #fff;
@@ -15,7 +27,32 @@ main {
 }
 
 .carouselImg {
-  width: 100%;
-  height: 400px;
+  width: 35vw;
+  height: 25vw;
   object-fit: cover;
+}
+
+.carouselContainer {
+  width: 35vw;
+  height: 25vw;
+}
+
+.navBtn {
+  background-color: var(--primary-color);
+  color: var(--tertiary-color);
+  border: 1px solid var(--tertiary-color);
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  margin: 0.5rem;
+  cursor: pointer;
+}
+
+.navBtnClicked {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  margin: 0.5rem;
+  cursor: pointer;
 }

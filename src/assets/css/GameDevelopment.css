@@ -1,0 +1,23 @@
+.gameContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.gameTitleContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.downloadBtn {
+    margin-left: 20px;
+    padding: 1rem;
+    border-radius: .5rem;
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+}
