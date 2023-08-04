@@ -5,7 +5,8 @@
 }
 
 #root {
-  background-color: var(--primary-color);
+  /* background-color: var(--primary-color); */
+  background-color: black;
 }
 
 /* Reset all default button styles */
@@ -28,7 +29,8 @@ button {
 }
 
 main {
-  background-color: var(--primary-color);
+  /* background-color: var(--primary-color); */
+  background-color: black;
 }
 
 .carouselImg {
@@ -43,7 +45,8 @@ main {
 }
 
 .navBtn {
-  background-color: var(--primary-color);
+  /* background-color: var(--primary-color); */
+  background-color: black;
   color: var(--tertiary-color);
   border: 1px solid var(--tertiary-color);
   border-radius: 0.5rem;
@@ -53,7 +56,8 @@ main {
 }
 
 .navBtnClicked {
-  background-color: var(--primary-color);
+  /* background-color: var(--primary-color); */
+  background-color: black;
   color: var(--secondary-color);
   border: 1px solid var(--secondary-color);
   border-radius: 0.5rem;
