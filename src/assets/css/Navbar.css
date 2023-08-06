@@ -61,7 +61,7 @@
 }
 
 .card {
-    width: 8vw;
+    width: 15vw;
     height: 16vh;
     border-radius: 1rem;
     background-color: #2fd5d8;
@@ -73,4 +73,21 @@
     font-family: 'VT323', monospace;
     font-size: 25px;
     text-decoration: none;
+    color: white;
+}
+
+.home-btn {
+    background-image: url('Observance_render.png');
+    background-size: cover;
+}
+
+.code-btn {
+    background-image: url('image.png');
+    background-size: cover;
+}
+
+
+.d-art-btn {
+    background-image: url('Screenshot_12.png');
+    background-size: cover;
 }
