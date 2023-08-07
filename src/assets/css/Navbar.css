@@ -61,7 +61,7 @@
 }
 
 .card {
-    width: 15vw;
+    width: 20vw;
     height: 16vh;
     border-radius: 1rem;
     background-color: #2fd5d8;
@@ -74,10 +74,19 @@
     font-size: 25px;
     text-decoration: none;
     color: white;
+    position: relative;
+    filter: brightness(.75);
+}
+
+
+.card:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    filter: brightness(1);
 }
 
 .home-btn {
-    background-image: url('Observance_render.png');
+    background-image: url('banner.jpg');
     background-size: cover;
 }
 
@@ -88,6 +97,11 @@
 
 
 .d-art-btn {
-    background-image: url('Screenshot_12.png');
+    background-image: url('Observance_render.png');
+    background-size: cover;
+}
+
+.game-dev-btn {
+    background-image: url("Screenshot_12.png");
     background-size: cover;
 }
