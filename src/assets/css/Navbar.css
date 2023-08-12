@@ -48,13 +48,28 @@
     text-shadow: 0 0 8px #34a8b3
 }
 
+.navbar-div {
+    display: flex;
+    flex-direction: column;
+}
+
 .nav-btn-container {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
     text-decoration: none;
-    padding-top: 5%;
+    padding: 5% 2.5%;
+    /* max-width: 1200px; */
 }
+
+@media screen and (max-width: 768px) {
+    .nav-btn-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+    
 
 .link-css {
     text-decoration: none;
@@ -77,6 +92,15 @@
     position: relative;
     filter: brightness(.75);
 }
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: 80vw;
+        height: 16vh;
+        margin: 2.5% 0;
+    }
+}
+    
 
 
 .card:hover {
@@ -105,3 +129,24 @@
     background-image: url("Screenshot_12.png");
     background-size: cover;
 }
+
+/* .navBtn {
+    background-color: var(--primary-color);
+    background-color: black;
+    color: var(--tertiary-color);
+    border: 1px solid var(--tertiary-color);
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+    margin: 0.5rem;
+    cursor: pointer;
+  } */
+  
+  /* .navBtnClicked {
+    background-color: black;
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+    margin: 0.5rem;
+    cursor: pointer;
+  } */
