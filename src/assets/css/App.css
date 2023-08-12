@@ -41,16 +41,6 @@ body {
 }
 
 
-.carouselImg {
-  width: 35vw;
-  height: 25vw;
-  object-fit: cover;
-}
-
-.carouselContainer {
-  width: 35vw;
-  height: 25vw;
-}
 
 link {
   text-decoration: none;

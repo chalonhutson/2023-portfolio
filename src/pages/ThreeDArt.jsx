@@ -6,6 +6,7 @@ import art04 from "../assets/images/art/art-04.jpg";
 import art05 from "../assets/images/art/art-05.jpg";
 import art06 from "../assets/images/art/art-06.jpg";
 
+import "../assets/css/ThreeDArt.css"
 import "../assets/css/App.css"
 
 export default function ThreeDArt() {
@@ -18,7 +19,7 @@ export default function ThreeDArt() {
                 <h1>3D Art</h1>
                 <div>
                     <div className="d-flex flex-row">
-                        <img width="500px" src={digitalCard} alt="HipsterGW Digital Card" />
+                        {/* <img width="500px" src={digitalCard} alt="HipsterGW Digital Card" /> */}
                         <div id="carouselExample" class="carousel slide carouselContainer">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
@@ -50,6 +51,9 @@ export default function ThreeDArt() {
                             </button>
                         </div>
                     </div>
+                    <a href="https://www.artstation.com/hipstergw" target="_blank" rel="noopener noreferrer">
+                        <button className="project-button mt-3">Visit My Artstation</button>
+                    </a>
                 </div>
             </div>
         </div>

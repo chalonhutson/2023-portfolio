@@ -1,0 +1,8 @@
+.carouselImg {
+    height: 50vw;
+    object-fit: cover;
+  }
+  
+  .carouselContainer {
+    width: 50vw;
+  }
