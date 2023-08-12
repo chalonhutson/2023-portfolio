@@ -1,0 +1,37 @@
+.project {
+    margin: 1rem 0;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    width: 80%;
+  }
+  
+  .project-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .project-tech {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .project-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  
+  .project-button {
+
+    padding: .5rem 1rem;
+    border: none;
+    background-color: var(--secondary-color); /* You can adjust this color if needed */
+    color: #fff;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .project-button:hover {
+    background-color: var(--tertiary-color); /* You can adjust this color if needed */
+  }

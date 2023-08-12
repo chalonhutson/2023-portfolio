@@ -1,32 +1,71 @@
-import { Link } from "react-router-dom";
+import "../assets/css/Code.css"
 
 export default function Code() {
+
+    const projectArr = [
+        {
+            title: "Whip It (concept)",
+            tech: "React front-end, Flask/Flask-SQLAlchemy back-end, Postgresql database",
+            buttons: [
+                {
+                    text: "Visit Whip It",
+                    link: "https://www.whip-it.us"
+                },
+                {
+                    text: "Github",
+                    link: "https://github.com/chalonhutson/whip-it"
+                }
+            ]
+        },
+        {
+            title: "Heather's K9 Community",
+            tech: "React",
+            buttons: [
+                {
+                    text: "Visit Heather's K9 Community",
+                    link: "https://heathersk9community.com/"
+                }
+            ]
+        },
+        {
+            title: "Easy CRM",
+            tech: "Flask/Flask-SQLAlchemy, Postgresql",
+            buttons: [
+                {
+                    text: "Visit Easy CRM",
+                    link: "https://easy-crm.us"
+                },
+                {
+                    text: "Github",
+                    link: "https://github.com/chalonhutson/easy_crm"
+                },
+                {
+                    text: "Watch Demo",
+                    link: "https://youtu.be/b7jIAu68G-A"
+                }
+            ]
+        }
+    ]
+
+    const renderProject = (project) => (
+        <div key={project.title} className="project">
+            <h2 className="project-title">{project.title}</h2>
+            <p className="project-tech">Tech: {project.tech}</p>
+            <div className="project-buttons">
+                {project.buttons.map((button, index) => (
+                    <a key={index} href={button.link} target="_blank" rel="noopener noreferrer">
+                        <button className="project-button">{button.text}</button>
+                    </a>
+                ))}
+            </div>
+        </div>
+    );
+
     return (
         <div className="componentContainer">
             <div className="mainContainer">
                 <h1>Code</h1>
-                <div>
-                    <h2>Whip It (concept)</h2>
-                    <p>Tech: React front-end, Flask/Flask-SQLAlchemy back-end, Postgresql database</p>
-                    <Link to="https://www.whip-it.us" target="_blank" rel="noopener noreferrer">
-                        <button>Visit Whip It</button>
-                    </Link>
-                </div>
-                <div>
-                    <h2>Heather's K9 Community</h2>
-                    <p>Tech: React</p>
-                    <Link to="https://heathersk9community.com/" target="_blank" rel="noopener noreferrer">
-                        <button>Visit Heather's K9 Community</button>
-                    </Link>
-                </div>
-                <div>
-                    <h2>Easy CRM</h2>
-                    <p>Tech: Flask/Flask-SQLAlchemy, Postgresql</p>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/b7jIAu68G-A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    <Link to="https://easy-crm.us" target="_blank" rel="noopener noreferrer">
-                        <button>Visit Easy CRM</button>
-                    </Link>
-                </div>
+                {projectArr.map(renderProject)}
             </div>
         </div>
     )
