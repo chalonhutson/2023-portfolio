@@ -14,10 +14,21 @@
     margin-bottom: 2rem;
 }
 
-.downloadBtn {
-    margin-left: 20px;
-    padding: 1rem;
-    border-radius: .5rem;
-    background-color: var(--primary-color);
-    color: var(--tertiary-color);
+
+.gameContainer h3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .project-button {
+        font-size: .75rem;
+    }
+
+    .gameContainer h3 {
+        font-size: 1.25rem;
+    }
 }

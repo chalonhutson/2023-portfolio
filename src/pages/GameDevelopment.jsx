@@ -26,7 +26,7 @@ export default function GameDevelopment() {
         <div className="componentContainer">
 
             <div className="mainContainer">
-                <h1>Game Development</h1>
+                <h1>Game Dev</h1>
                 <h2>Check out some of my Unreal Engine Projects!</h2>
                 <h2>All games part of game jams.</h2>
                 <div className="gameContainer">
@@ -35,9 +35,11 @@ export default function GameDevelopment() {
                             <div className="gameContainer">
                                 <div className="gameTitleContainer">
                                     <h3>{game.title}</h3>
-                                    <button className="downloadBtn">Download & Play</button>
+                                    <a href="https://www.artstation.com/hipstergw" target="_blank" rel="noopener noreferrer">
+                                        <button className="project-button ms-3">Download & Play</button>
+                                    </a>
                                 </div>
-                                <iframe width="560" height="315" src={game.videoLink} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                <iframe className="ytEmbed" src={game.videoLink} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                             </div>
                         )
                     }

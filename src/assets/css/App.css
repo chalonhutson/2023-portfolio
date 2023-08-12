@@ -40,8 +40,6 @@ body {
 
 }
 
-
-
 link {
   text-decoration: none;
 }
@@ -87,3 +85,17 @@ link {
   font-size: 1.5rem;
   }
 }
+
+.ytEmbed {
+  width: 100%; /* Set the width to 100% for mobile devices */
+  height: auto; /* Let the height adjust automatically */
+}
+
+/* Add a media query to adjust dimensions for larger screens if needed */
+@media (min-width: 768px) {
+  .ytEmbed {
+    width: 560px; /* Set the desired width for larger screens */
+    height: 315px; /* Set the desired height for larger screens */
+  }
+}
+
