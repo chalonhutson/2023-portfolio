@@ -20,9 +20,14 @@
     flex-direction: row;
     gap: 1rem;
   }
+
+  @media screen and (max-width: 768px) {
+    .project-buttons {
+      flex-direction: column;
+    }
+  }
   
   .project-button {
-
     padding: .5rem 1rem;
     border: none;
     background-color: var(--secondary-color); /* You can adjust this color if needed */
