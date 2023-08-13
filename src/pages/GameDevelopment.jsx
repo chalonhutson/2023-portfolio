@@ -35,7 +35,7 @@ export default function GameDevelopment() {
                             <div className="gameContainer">
                                 <div className="gameTitleContainer">
                                     <h3>{game.title}</h3>
-                                    <a href="https://www.artstation.com/hipstergw" target="_blank" rel="noopener noreferrer">
+                                    <a href={game.downloadLink} target="_blank" rel="noopener noreferrer">
                                         <button className="project-button ms-3">Download & Play</button>
                                     </a>
                                 </div>
