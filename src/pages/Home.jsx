@@ -25,6 +25,11 @@ export default function Home() {
                 <div className="contactContainer">
                     <h4 className="homeContainerHeader">Feel free to reach out to me </h4>
                     <span className="contactInfoContainer">
+                        <a href="https://docs.google.com/document/d/1EdWBXa2YsgQGkHIADAM8ACaTSRm4SnSQ8CJjy4HqbPU/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
+                            <button className="project-button m-3 w-100">Resume</button>
+                        </a>
+                    </span>
+                    <span className="contactInfoContainer">
                         <p>(623) 810-1177</p>
                         <p>chalonhutson@gmail.com</p>
                     </span>
