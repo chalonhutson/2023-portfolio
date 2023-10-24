@@ -4,6 +4,20 @@ export default function Code() {
 
     const projectArr = [
         {
+            title: "My Volunteers",
+            tech: "React front-end, Flask/Flask-SQLAlchemy back-end, Postgresql database",
+            buttons: [
+                {
+                    text: "Visit (email for login criteria)",
+                    link: "https://my-volunteers.com/"
+                },
+                {
+                    text: "Github",
+                    link: "https://github.com/chalonhutson/my-volunteers"
+                }
+            ]
+        },
+        {
             title: "Whip It (concept)",
             tech: "React front-end, Flask/Flask-SQLAlchemy back-end, Postgresql database",
             buttons: [
@@ -24,20 +38,6 @@ export default function Code() {
                 {
                     text: "Visit Heather's K9 Community",
                     link: "https://heathersk9community.com/"
-                }
-            ]
-        },
-        {
-            title: "My Volunteers",
-            tech: "React front-end, Flask/Flask-SQLAlchemy back-end, Postgresql database",
-            buttons: [
-                {
-                    text: "Visit Site In Progress",
-                    link: "https://my-volunteers.com/"
-                },
-                {
-                    text: "Github",
-                    link: "https://github.com/chalonhutson/my-volunteers"
                 }
             ]
         },
